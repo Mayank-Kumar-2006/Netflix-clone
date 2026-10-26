@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Yuyu+Short&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(assets/images/background-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 90vh;
+    position: relative;
+}
+.main .box{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+nav img{
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 7px;
+    padding:0 20px;
+}
+
+.hero> :first-child{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero> :nth-child(4){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation{
+    height: 7px;
+    background-color:rgb(145, 8, 8);
+}
+
+.btn{
+    padding: 3px 8px;
+    /* font-weight: bolder; */
+    background-color:black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.red-two{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.main input{
+    padding: 7px 100px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color:rgba(23,23,23,0.7);
+    border: 1px solid rgba(252, 249, 249, 0.5);
+}
+
+.red-one{
+    background-color: red;
+    color: white;
+}
+
+.trending {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.head {
+    margin-left: 100px;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.first {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    column-gap: 25px;
+    row-gap: 45px;
+}
+
+.card {
+    position: relative;
+    height: 210px;
+}
+
+.card img {
+    width: 150px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.number {
+    position: absolute;
+    left: -28px;
+    bottom: 5px;
+    z-index: 2;
+
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1;
+
+    color: black;
+    -webkit-text-stroke: 3px white;
+    text-shadow: 2px 2px 5px black;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .card img {
+        width: 160px;
+        height: 250px;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .number {
+        font-size: 80px;
+        left: -22px;
+    }
+}
+
+.reasons {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 25px 15px;
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.reasons h2 {
+    margin-left: 150px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.reason-container {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 14px;
+    justify-content: center;
+}
+
+.reason-card {
+    position: relative;
+    height: 300px;
+    padding: 30px 14px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1d2147, #1b1020);
+    overflow: hidden;
+}
+
+.reason-card h3 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.reason-card p {
+    color: #b9b7c2;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.reason-card img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    right: 20px;
+    bottom: 20px;
+}
+
+.plus {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.faq h2{
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover{
+    background-color: gray;
+}
+.faqbox{
+    transition: all 1s ease-out;
+    font-size: 22px;
+    display: flex;
+    background-color:rgba(97, 94, 94, 0.429);
+    padding: 25px 15px 15px 15px;
+    max-width: 75vw;
+    margin: 8px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+}
+footer .head{
+    margin-left: 190px;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    max-width: 80vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 1300px)  {
+    nav{
+        max-width: 90vw;
+    }
+
+    .hero> :first-child{
+    font-size: 32px;
+    }
+
+    .hero> :nth-child(2){
+    font-size: 32px;
+    }
+    .hero> :nth-child(3){
+    font-size: 18px;
+    }
+
+    .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    }
+}
+
+.footer a{
+    font-size: 14px;
+    color: white;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .head,
+    footer .head,
+    .reasons h2,
+    .faq h2 {
+        margin-left: 15px;
+    }
+}
