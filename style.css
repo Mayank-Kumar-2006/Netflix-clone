@@ -138,7 +138,7 @@ nav button{
 .first {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .container {
@@ -310,6 +310,7 @@ footer .head{
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     max-width: 80vw;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1300px)  {
@@ -354,5 +355,27 @@ footer .head{
     .reasons h2,
     .faq h2 {
         margin-left: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reason-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+    }
+
+    .reason-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 500px) {
+    .reason-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .reason-card {
+        max-width: 360px;
     }
 }
